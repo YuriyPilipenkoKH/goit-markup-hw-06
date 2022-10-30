@@ -956,6 +956,18 @@ textarea {
     
     color: rgba(117, 117, 117, 0.5);    
 }
+.check-box {
+    
+}
+.form-check {
+    
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    
+    color: #757575;    
+
+}
 
 
 
