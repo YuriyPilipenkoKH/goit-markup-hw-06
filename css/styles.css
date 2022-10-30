@@ -665,7 +665,7 @@ a:active, a:focus { outline: none; }
     cursor: pointer;
 
     transition-property: background-color, color, box-shadow;
-    transition-duration: 4250ms;
+    transition-duration: 250ms;
     transition-timing-function: var(--cubic);
 
 }
