@@ -1013,20 +1013,44 @@ textarea {
     gap: 10px;
 }
 .check-box {
--moz-appearance: none;
+    
+/* -moz-appearance: none;
 -webkit-appearance: none;
 -o-appearance: none;
 -ms-progress-appearance: none;
-appearance: none;
+appearance: none; */
+}
+.emailing {
+    display: flex;
+    align-items: center;
+}
+.check-icon {
+    position: absolute;
+    left: 60px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #000;
+    border-radius: 4px;
 
+    pointer-events: none;
+}
+.check-box:checked + .check-icon {
+    border-color: transparent;
+    border-color: var(--button);
+    background-image: url(../images/check-icon.svg);
+    background-size: contain;
+    background-origin: border-box;
 }
 
+
 .form-check {
-    
+    display: inline-block;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
-    
+
+    padding-left: 30px;
     color: #757575;    
 
 }
