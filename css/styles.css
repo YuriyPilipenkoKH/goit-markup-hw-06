@@ -838,7 +838,7 @@ a:active, a:focus { outline: none; }
 }
 /*modal*/
 .modal-title {
-    margin: 15px auto 18px;
+    margin: 20px auto 18px;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
@@ -897,6 +897,10 @@ a:active, a:focus { outline: none; }
     margin: 0;
 
 }
+.modal-shut:hover svg,
+.modal-shut:focus svg {
+    fill: var(--button)
+}
 .cross {
 
     fill: var(--logo2);
@@ -909,6 +913,7 @@ a:active, a:focus { outline: none; }
     
 }
 .form-input {
+    /* display: block; */
     padding: 10px 0 10px 42px;
     margin: 0 auto;
     width: 448px;
@@ -935,6 +940,35 @@ a:active, a:focus { outline: none; }
     top: 25px;
     left: 35px;
 }
+.form-label:hover svg {
+    fill: var(--button);
+
+}
+/* 
+.form-input:after{
+    background-color: #fff;
+    display: block;
+    content: "";
+    height: 1px;
+    width: 0%;
+    left:50%;
+    position:relative;
+    -webkit-transition: width .3s ease-in-out;
+    -moz-transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform:translateX(-50%);
+    -moz-transform:translateX(-50%);
+    transform:translateX(-50%);
+}
+.form-input:hover:after svg {
+    fill: var(--button);
+
+}
+.form-input:hover:after  {
+    border-color: var(--button);
+
+} */
+
 .comments {
     display: flex;
     flex-direction: column;
@@ -954,6 +988,7 @@ textarea {
     
     color: rgba(117, 117, 117, 0.5);    
 }
+
 .check-box {
     display: flex;
     justify-content: center;
@@ -990,7 +1025,7 @@ textarea {
     cursor: pointer;
 
     transition-property: background-color;
-    transition-duration: 250ms;
+    transition-duration: 4250ms;
     transition-timing-function: var(--cubic);
 
 }
@@ -999,6 +1034,9 @@ textarea {
     background-color: var(--button-active);
 }
 .contract-terms {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;    
     
     text-decoration: underline;
     color: var(--button);   
