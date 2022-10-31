@@ -948,15 +948,17 @@ a:active, a:focus { outline: none; }
     top: 25px;
     left: 35px;
 
-    btransition-property: fill;
+    transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);order: 1px solid rgba(33, 33, 33, 0.2);
 
 }
-.form-input:hover  {
+.form-input:hover,
+.form-input:focus  {
     border: 1px solid var(--button);
 }
-.form-input:hover + svg {
+.form-input:hover + svg,
+.form-input:focus + svg {
     fill: var(--button);
 }
 /* 
@@ -1004,11 +1006,21 @@ textarea {
     color: rgba(117, 117, 117, 0.5);    
 }
 
-.check-box {
+.emailing {
+    
     display: flex;
     justify-content: center;
     gap: 10px;
 }
+.check-box {
+-moz-appearance: none;
+-webkit-appearance: none;
+-o-appearance: none;
+-ms-progress-appearance: none;
+appearance: none;
+
+}
+
 .form-check {
     
     font-size: 14px;
