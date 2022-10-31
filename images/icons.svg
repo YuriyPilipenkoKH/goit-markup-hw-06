@@ -6,7 +6,7 @@
     <symbol id="check-box" viewBox="0 0 32 32">
       <path d="M28.444 4.333v23.333H3.555V4.333h24.889zm0-3.333H3.555C1.599 1-.001 2.5-.001 4.333v23.333c0 1.833 1.6 3.333 3.556 3.333h24.889c1.956 0 3.556-1.5 3.556-3.333V4.333C32 2.5 30.4 1 28.444 1z"/>
     </symbol>
-   <symbol id="checked" viewBox="0 0 32 32">
+   <symbol id="checked" viewBox="0 0 34 32">
       <path  style="fill:var(--color1, #2196f3)" d="M4 1h24c2.209 0 4 1.791 4 4v22c0 2.209-1.791 4-4 4H4c-2.209 0-4-1.791-4-4V5c0-2.209 1.791-4 4-4z"/>
       <path fill="#fff" style="fill:var(--color2, #fff);stroke:var(--color2, #fff)" stroke="#fff" stroke-width=".4" d="m7.914 16.503-.138-.131-2.067 1.958 7.282 6.947 15.298-14.594-2.053-1.959-13.245 12.623-5.077-4.844z"/>
      </symbol>
