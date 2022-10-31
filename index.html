@@ -538,9 +538,9 @@
 
           <div class="comments">
             <label class="form-label" for="comment">Коментар</label>
-            <textarea 
+            <textarea
              name="comment"
-             id="comment"  
+             id="comment"
              placeholder="Введіть текст"
              rows="7">
             </textarea>
@@ -552,11 +552,18 @@
              type="checkbox"
               name="accept"
                id="accept">
-               <span class="check-icon"></span>
+            
+                <span class="check-icon">
+                  <svg class="ch" width="16" height="15">
+                    <use href="./images/icons.svg#cheked"></use>
+                  </svg>
+                </span>
+               
             <label class="form-check"
              for="accept">Погоджуюся з розсилкою та приймаю   </label>
             <a class="contract-terms" href="#">Умови договору</a>
           </div>
+         
 
           <button class="submit-button" type="submit">Відправити
           </button>

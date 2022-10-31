@@ -1025,22 +1025,32 @@ appearance: none; */
     align-items: center;
 }
 .check-icon {
+   
     position: absolute;
     left: 60px;
-    display: inline-block;
-    width: 15px;
+     display: inline-block;
+    width: 16px;
     height: 15px;
-    border: 2px solid #000;
+    border: 2px solid var(--logo2);
     border-radius: 4px;
 
     pointer-events: none;
 }
-.check-box:checked + .check-icon {
-    border-color: transparent;
+
+/* .icon-check {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='15' rx='2' fill='%232196F3'/%3E%3Cpath d='m3.957 7.7517-.0687-.0657-.069.0654-.888.8412-.0764.0723.076.0726 3.4958 3.3349.069.0658.069-.0658 7.5043-7.1589.0759-.0723-.0759-.0724-.8817-.8412-.069-.0658-.069.0658-6.5535 6.2459L3.957 7.7517Z' fill='%23fff' stroke='%23fff' stroke-width='.2'/%3E%3C/svg%3E");
+  } */
+
+
+.check-box:checked + .check-icon  {
+    
     border-color: var(--button);
-    background-image: url(../images/check-icon.svg);
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='15' rx='2' fill='%232196F3'/%3E%3Cpath d='m3.957 7.7517-.0687-.0657-.069.0654-.888.8412-.0764.0723.076.0726 3.4958 3.3349.069.0658.069-.0658 7.5043-7.1589.0759-.0723-.0759-.0724-.8817-.8412-.069-.0658-.069.0658-6.5535 6.2459L3.957 7.7517Z' fill='%23fff' stroke='%23fff' stroke-width='.2'/%3E%3C/svg%3E");
+  
     background-size: contain;
-    background-origin: border-box;
+    background-origin: border-box; 
+    
+
 }
 
 
