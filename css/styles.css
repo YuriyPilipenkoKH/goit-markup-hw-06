@@ -1021,22 +1021,27 @@ textarea {
     cursor: pointer;
 }
 .check-icon {
-    position: absolute;
-    left: 20px;
     
-    display: inline-block;
-    width: 16px;
-    height: 15px;
-    border: 2px solid var(--logo2);
-    border-radius: 4px;
-
-    pointer-events: none;
+    
+    
 }
 .ch {
-    position: absolute;
-    top: -2px;
-    left: -2px;
+   
     
+    width: 16px;
+    height: 15px;
+    fill: var(--button);
+    border: 2px solid var(--logo2);
+    border-radius: 4px;
+    padding: 0;
+    margin-right: 7px;
+    cursor: pointer;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+
+    /* pointer-events: none; */
 }
 .check-box:checked + .check-icon  {
     
@@ -1048,12 +1053,16 @@ textarea {
 }
 
 .form-check {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 30px;
+
+    
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
 
-    padding-left: 30px;
     color: var(--contact);    
 
 }
