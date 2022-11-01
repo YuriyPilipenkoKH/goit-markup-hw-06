@@ -996,14 +996,14 @@ div>img {
     padding: 0;
     margin-right: 7px;
 
-    transition-property: fill, border-color;
+    transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
 }
 
 .check-box:checked + .check-icon  {
     fill: var(--button);
-    border-color: var(--button);
+    border: 2px solid var(--button)
     
 }
 .form-check {
