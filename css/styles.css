@@ -913,9 +913,6 @@ button:focus {outline:1px solid #000000;}
     transition-timing-function: var(--cubic);
 }
 
-
-
-
 .form-field {
     position: relative;
     display: block;
@@ -987,9 +984,7 @@ button:focus {outline:1px solid #000000;}
     
     border-radius: 4px;
     transition: border 250ms var(--cubic);
-    
 }
-
 
 .check-icon {
     
