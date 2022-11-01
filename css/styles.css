@@ -751,7 +751,9 @@ div>img {
 
 .menu-button:hover,
 .menu-button:focus {
-    background-color: var(--button-active);
+    background-color: var(--button);
+    color: var(--main-background);
+    box-shadow: var(--box-shadow-third);
 }   
 .button-list .radio-button + .radio-button {
     margin-left: 8px;
