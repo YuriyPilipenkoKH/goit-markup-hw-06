@@ -912,159 +912,116 @@ button:focus {outline:1px solid #000000;}
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
 }
+
+
+
+
 .form-field {
     position: relative;
-    margin-bottom: 16px;
-    display: flex;
-    flex-direction: column;
-    
+    display: block;
+    margin-bottom: 10px;
+    transition: fill 250ms var(--cubic);
 }
 .form-input {
-    /* display: block; */
-    padding: 10px 0 10px 42px;
-    margin: 0 auto;
-    width: 448px;
-    font-size: 16px;
-    line-height: calc(20 / 16);
-    letter-spacing: 0.03em;
-
-    color: var(--logo2);    
-    background-color: var(--main-background);
+    width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-
-    transition-property: border;
-    transition-duration: 250ms;
-    transition-timing-function: var(--cubic);
-
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 42px;
+    transition: border 250ms var(--cubic);
 }
-.form-input-modal {
+.label-modal {
+    margin-top: 0px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color:  var(--contact);
     display: block;
-    padding: 12px 16px ;
-    margin: 0 auto;
-    width: 448px;
-    height: 120px;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    
-    color: rgba(117, 117, 117, 0.5);
-        
-    background-color: var(--main-background);
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-
-    transition-property: border;
-    transition-duration: 250ms;
-    transition-timing-function: var(--cubic);
-
+    text-align: left;
 }
-.form-label {
-    
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    letter-spacing: 0.01em;
-    
-    color: #757575;    
-}
-.modal-icon {
+.modal-icons {
     position: absolute;
-    top: 25px;
-    left: 15px;
-
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: var(--cubic);order: 1px solid rgba(33, 33, 33, 0.2);
-
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 12px;
+    text-align: center;
+    display: inline-block;
 }
+
+.form-input:hover ~ svg,
+.form-input:focus ~ svg {
+    fill: var(--button)
+}
+
+
 .form-input:hover,
 .form-input:focus,
-.form-input-modal:hover,
-.form-input-modal:focus  {
+.comments-modal:hover,
+.comments-modal:focus{
     border: 1px solid var(--button);
-}
-.form-input:hover + svg,
-.form-input:focus + svg {
-    fill: var(--button);
+    outline: none;
 }
 
 
+ 
 .comments {
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    display: block;
 }
-textarea {
+.comments-modal {
     resize: none;
-    width: 448px;
+    display: block;
 
     padding: 12px 16px;
+    width: 448px;
+    height: 120px;
     margin: 0 auto 20px;
-    border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
-
     font-size: 12px;
-    line-height: calc(14 / 12);
+    line-height: 1.16;
     letter-spacing: 0.01em;
     
-    color: rgba(117, 117, 117, 0.5);    
+    border-radius: 4px;
+    transition: border 250ms var(--cubic);
+    
 }
 
-.emailing {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
 
-}
-.check-box {
-    cursor: pointer;
-}
 .check-icon {
-    
-    
-    
-}
-.ch {
-   
     
     width: 16px;
     height: 15px;
-    fill: var(--button);
+    fill: #fff;
     border: 2px solid var(--logo2);
     border-radius: 4px;
     padding: 0;
     margin-right: 7px;
-    cursor: pointer;
 
-    transition-property: fill;
+    transition-property: fill, border-color;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
-
-    /* pointer-events: none; */
 }
+
 .check-box:checked + .check-icon  {
-    
+    fill: var(--button);
     border-color: var(--button);
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='16' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='16' height='15' rx='2' fill='%232196F3'/%3E%3Cpath d='m3.957 7.7517-.0687-.0657-.069.0654-.888.8412-.0764.0723.076.0726 3.4958 3.3349.069.0658.069-.0658 7.5043-7.1589.0759-.0723-.0759-.0724-.8817-.8412-.069-.0658-.069.0658-6.5535 6.2459L3.957 7.7517Z' fill='%23fff' stroke='%23fff' stroke-width='.2'/%3E%3C/svg%3E");
-  
-    background-size: contain;
-    background-origin: border-box; 
+    
 }
-
 .form-check {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px 0 30px;
 
-    
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
 
     color: var(--contact);    
-
 }
 .submit-button {
     display: block;
