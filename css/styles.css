@@ -74,9 +74,9 @@ div>img {
     
 }
 /* a:active { outline: none; } */
-a:focus { outline: 1px solid var(--button); }
-:focus {outline:1px solid var(--button);}
-button:focus {outline:1px solid #000000;}
+/* a:focus { outline: 1px solid var(--button); } */
+/* :focus {outline:1px solid var(--button);} */
+/* button:focus {outline:1px solid #000000;} */
 
 /* header */
 .header {
