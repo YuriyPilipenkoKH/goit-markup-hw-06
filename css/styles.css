@@ -73,6 +73,10 @@ div>img {
     padding-right: 15px;
     
 }
+/* a:active { outline: none; } */
+a:focus { outline: 1px solid var(--button); }
+:focus {outline:1px solid var(--button);}
+button:focus {outline:1px solid #000000;}
 
 /* header */
 .header {
@@ -837,7 +841,7 @@ div>img {
 }
 /*modal*/
 .modal-title {
-    margin: 20px auto 18px;
+    margin: 0 auto 18px;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
@@ -868,7 +872,7 @@ div>img {
     min-height: 581px;
     min-width: 528px;
     background-color: var(--main-background);
-    padding: 15px;
+    padding: 40px;
     border-radius: 4px;
 
     position: absolute;
@@ -934,8 +938,29 @@ div>img {
     transition-timing-function: var(--cubic);
 
 }
+.form-input-modal {
+    display: block;
+    padding: 12px 16px ;
+    margin: 0 auto;
+    width: 448px;
+    height: 120px;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    
+    color: rgba(117, 117, 117, 0.5);
+        
+    background-color: var(--main-background);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
+
+}
 .form-label {
-    margin-left: 24px;
+    
     font-size: 12px;
     line-height: calc(14 / 12);
     letter-spacing: 0.01em;
@@ -945,7 +970,7 @@ div>img {
 .modal-icon {
     position: absolute;
     top: 25px;
-    left: 35px;
+    left: 15px;
 
     transition-property: fill;
     transition-duration: 250ms;
@@ -953,7 +978,9 @@ div>img {
 
 }
 .form-input:hover,
-.form-input:focus  {
+.form-input:focus,
+.form-input-modal:hover,
+.form-input-modal:focus  {
     border: 1px solid var(--button);
 }
 .form-input:hover + svg,
@@ -983,30 +1010,34 @@ textarea {
 }
 
 .emailing {
-    
+    position: relative;
     display: flex;
     justify-content: center;
-    gap: 10px;
-}
-
-.emailing {
-    display: flex;
     align-items: center;
+    gap: 10px;
+
+}
+.check-box {
+    cursor: pointer;
 }
 .check-icon {
     position: absolute;
-    left: 60px;
+    left: 20px;
     
     display: inline-block;
     width: 16px;
     height: 15px;
     border: 2px solid var(--logo2);
     border-radius: 4px;
-    cursor: pointer;
 
     pointer-events: none;
 }
-
+.ch {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    
+}
 .check-box:checked + .check-icon  {
     
     border-color: var(--button);
