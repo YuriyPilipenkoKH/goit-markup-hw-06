@@ -1001,7 +1001,7 @@ div>img {
 .accept {
     position: absolute;
     
-    left: 22.5px;
+    left: 22px;
     width: 16px;
     height: 15px;
     border: 2px solid var(--logo2);
