@@ -968,8 +968,7 @@ div>img {
  
 .comments {
     margin-bottom: 20px;
-    margin-top: 0px;
-    display: block;
+        display: block;
 }
 .comments-modal {
     resize: none;
@@ -985,7 +984,7 @@ div>img {
     letter-spacing: 0.01em;
     
     border-radius: 4px;
-    transition: border 250ms var(--cubic);
+    
 }
 .check-box {
     position: relative;
@@ -1002,12 +1001,12 @@ div>img {
 .accept {
     position: absolute;
     
-    left: 22px;
+    left: 22.5px;
     width: 16px;
     height: 15px;
-    margin-right: 10px;
     border: 2px solid var(--logo2);
     border-radius: 2px;
+    transition: border 250ms var(--cubic);
 }
 .check-box:checked ~ .check-icon  {
     fill: var(--button);
@@ -1025,7 +1024,7 @@ div>img {
     justify-content: center;
     gap: 8px;  
     align-items: center;
-    margin: 20px 0 30px;
+    margin: 0 auto 30px;
 
     font-size: 14px;
     line-height: calc(24 / 14);
@@ -1035,8 +1034,8 @@ div>img {
 }
 .submit-button {
     display: block;
-    margin: 20px auto 0;
-    padding: 8px 28px;
+    margin: 0 auto;
+    padding: 10px 52px;
 
     font-family: inherit;
     font-style: normal;
